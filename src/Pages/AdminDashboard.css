@@ -1,0 +1,190 @@
+.admin-dashboard-root {
+  display: flex;
+  min-height: 100vh;
+  background: #000;
+}
+
+.admin-main-content {
+  flex: 1;
+  background: #000;
+  padding: 0 0 0 0;
+  min-height: 100vh;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 40px;
+  padding: 24px 32px 24px 32px;
+  background: linear-gradient(135deg, #1a1a1a 0%, #000000 100%);
+  border-radius: 0 0 12px 12px;
+  color: #f1f1f1;
+  border-bottom: 1px solid #333;
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.user-avatar {
+  width: 70px;
+  height: 70px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  font-weight: bold;
+  border: 3px solid rgba(255, 215, 0, 0.3);
+  color: #ffd700;
+  box-shadow: 0 2px 8px 0 rgba(255,215,0,0.08);
+}
+
+.user-info h2 {
+  margin: 0 0 5px 0;
+  font-size: 24px;
+  font-weight: 600;
+  color: #ffd700;
+}
+
+.user-email {
+  margin: 0 0 15px 0;
+  opacity: 0.9;
+  font-size: 14px;
+  color: #ccc;
+}
+
+.user-stats {
+  display: flex;
+  gap: 20px;
+}
+
+.stat {
+  font-size: 14px;
+  opacity: 0.9;
+  color: #ccc;
+}
+
+.stat strong {
+  color: #ffd700;
+  font-size: 16px;
+}
+
+.quick-actions {
+  background: #1a1a1a;
+  padding: 25px 32px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  border: 1px solid #333;
+  margin: 0 32px 32px 32px;
+}
+
+.quick-actions h3 {
+  margin: 0 0 20px 0;
+  color: #ffd700;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.action-btn {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.action-btn.primary {
+  background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
+  color: #000000;
+}
+
+.action-btn.secondary {
+  background: #333;
+  color: #f1f1f1;
+  border: 1px solid #555;
+}
+
+.action-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 215, 0, 0.13);
+}
+
+.recent-courses {
+  background: #1a1a1a;
+  padding: 25px 32px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  border: 1px solid #333;
+  margin: 0 32px 32px 32px;
+}
+
+.recent-courses h4 {
+  margin: 0 0 10px 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffd700;
+}
+
+.recent-courses p {
+  margin: 0 0 20px 0;
+  font-size: 14px;
+  color: #ccc;
+}
+
+.empty-state {
+  text-align: center;
+  color: #ccc;
+}
+
+.empty-icon {
+  font-size: 48px;
+  margin-bottom: 20px;
+  opacity: 0.5;
+}
+
+@media (max-width: 900px) {
+  .admin-dashboard-root {
+    flex-direction: column;
+  }
+  .admin-sidebar {
+    width: 100%;
+    min-height: unset;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 16px 0;
+    border-right: none;
+    border-bottom: 1px solid #333;
+    box-shadow: none;
+  }
+  .admin-sidebar-title {
+    margin-bottom: 0;
+    margin-right: 32px;
+  }
+  .admin-sidebar-menu {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+  }
+  .admin-sidebar-item {
+    margin-bottom: 0;
+    margin-right: 12px;
+    padding: 10px 18px;
+    font-size: 15px;
+    border-radius: 8px;
+  }
+} 

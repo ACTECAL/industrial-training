@@ -1,0 +1,54 @@
+body, .cheatsheet-page {
+  background: #181a1b;
+  color: #f1f1f1;
+}
+
+.cheatsheet-container {
+  background: linear-gradient(135deg, #232526 0%, #181a1b 100%);
+  color: #f1f1f1;
+}
+
+.cheatsheet-header h1 {
+  color: #ffd700;
+}
+
+.cheatsheet-header p {
+  color: #ccc;
+}
+
+.cheatsheet-grid {
+  background: none;
+}
+
+.cheatsheet-card {
+  background: #232526;
+  border: 1px solid #333;
+  color: #f1f1f1;
+}
+
+.cheatsheet-card:hover {
+  box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+}
+
+.cheatsheet-card h3 {
+  color: #ffd700;
+}
+
+.cheatsheet-card p {
+  color: #ccc;
+}
+
+.cheatsheet-icon {
+  color: #ffd700;
+}
+
+.back-btn {
+  background: rgba(40, 40, 40, 0.8);
+  border: 1px solid #333;
+  color: #ffd700;
+}
+
+.back-btn:hover {
+  background: rgba(50, 50, 50, 0.9);
+  color: #ffed4e;
+} 

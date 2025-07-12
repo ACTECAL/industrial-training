@@ -1,0 +1,143 @@
+.cheatsheet-layout-container {
+  max-width: 1200px;
+  margin: 32px auto;
+  background: linear-gradient(135deg, #232526 0%, #181a1b 100%);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+  padding: 40px 32px;
+  color: #f1f1f1;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+.cheatsheet-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+.cheatsheet-back-btn {
+  font-size: 15px;
+  padding: 12px 20px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #f1f1f1;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cheatsheet-back-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+  border-color: #ffd700;
+}
+.cheatsheet-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0;
+  color: #ffd700;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+.cheatsheet-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.cheatsheet-item {
+  margin-bottom: 32px;
+  border-bottom: 1px solid #333;
+  padding-bottom: 24px;
+  background: rgba(40, 40, 40, 0.8);
+  border-radius: 12px;
+  padding: 24px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.cheatsheet-item:hover {
+  background: rgba(40, 40, 40, 0.9);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+.cheatsheet-item-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.cheatsheet-item-header strong {
+  color: #ffd700;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.cheatsheet-copy-btn {
+  font-size: 1.1rem;
+  padding: 8px 16px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
+  border: none;
+  color: #000;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+.cheatsheet-copy-btn:hover {
+  background: linear-gradient(135deg, #ffed4e 0%, #ffd700 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 215, 0, 0.3);
+}
+.cheatsheet-code-block {
+  background: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 20px;
+  font-size: 1rem;
+  font-family: 'Fira Mono', 'Consolas', 'Menlo', monospace;
+  color: #f1f1f1;
+  overflow-x: auto;
+  margin: 0;
+  box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.3);
+  word-wrap: break-word;
+}
+
+.cheatsheet-code-block code {
+  color: #f1f1f1;
+  line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .cheatsheet-layout-container {
+    margin: 16px;
+    padding: 24px 20px;
+  }
+  
+  .cheatsheet-title {
+    font-size: 2rem;
+  }
+  
+  .cheatsheet-header {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+  }
+  
+  .cheatsheet-item {
+    padding: 20px;
+  }
+  
+  .cheatsheet-item-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  
+  .cheatsheet-code-block {
+    padding: 16px;
+    font-size: 0.9rem;
+  }
+} 
