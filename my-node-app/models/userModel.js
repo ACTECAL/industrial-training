@@ -1,15 +1,23 @@
 const db = require('../config/db');
-
-const User = {
-  create: (data, callback) => {
-    const sql = 'INSERT INTO users (name, email, password, role) VALUES (?, ?, ?, ?)';
-    db.query(sql, [data.name, data.email, data.password, data.role], callback);
-  },
-
-  findByEmail: (email, callback) => {
-    const sql = 'SELECT * FROM users WHERE email = ?';
-    db.query(sql, [email], callback);
-  }
+const insertUser = async (name,mobile,email,hashPassword,role)=>{
+    try{
+    const query = "INSERT INTO signup (name,mobile,email,password,role) VALUES (?,?,?,?,?)";
+    const rows = await db.query(query,[name,mobile,email,hashPassword,role]);
+    return rows[0];
+}catch(error){
+    console.log('error insertion',error);
+    return null;
+}
 };
 
-models.exports = User;
+const findUserByEmail = async(email)=>{
+    try{
+    const query = "SELECT * FROM signup WHERE email = ?";
+    const rows = await db.query(query,[email]);
+    return rows[0] && rows[0][0];
+    }catch(error){
+        console.log('error selection',error);
+        return null;
+    }
+};
+module.exports = {insertUser,findUserByEmail};
