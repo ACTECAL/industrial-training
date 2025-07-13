@@ -1,0 +1,140 @@
+.adminsignup-bg {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #e3f0ff 0%, #f8fafc 100%);
+}
+
+.adminsignup-outer {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 120px;
+  padding-bottom: 60px;
+}
+
+.adminsignup-form {
+  max-width: 430px;
+  width: 100%;
+  background: #fff;
+  border-radius: 24px;
+  box-shadow: 0 12px 48px rgba(33, 150, 243, 0.13), 0 2px 8px rgba(0,0,0,0.07);
+  padding: 3.1rem 2.7rem 2.3rem 2.7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  border-left: 7px solid #1976d2;
+  position: relative;
+}
+
+.adminsignup-form h2 {
+  margin-bottom: 2.1rem;
+  color: #1976d2;
+  font-weight: 900;
+  letter-spacing: 1.3px;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.adminsignup-form h2::before {
+  content: '🛡️';
+  font-size: 1.5rem;
+  margin-right: 0.3rem;
+}
+
+.adminsignup-form input {
+  width: 100%;
+  padding: 1.15rem 1.2rem;
+  margin-bottom: 1.4rem;
+  border: 1.8px solid #90caf9;
+  border-radius: 13px;
+  font-size: 1.13rem;
+  background: #f5f7fa;
+  transition: border 0.2s, box-shadow 0.2s;
+  box-sizing: border-box;
+}
+
+.adminsignup-form input:focus {
+  border: 1.8px solid #1976d2;
+  outline: none;
+  box-shadow: 0 2px 12px rgba(25,118,210,0.13);
+}
+
+.adminsignup-form button[type="submit"] {
+  width: 100%;
+  padding: 1.1rem;
+  background: linear-gradient(90deg, #1976d2 0%, #512da8 100%);
+  color: #fff;
+  border: none;
+  border-radius: 13px;
+  font-size: 1.22rem;
+  font-weight: 800;
+  cursor: pointer;
+  margin-top: 0.2rem;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 12px rgba(25,118,210,0.10);
+  letter-spacing: 0.6px;
+  position: relative;
+  z-index: 1;
+}
+.adminsignup-form button[type="submit"]:hover {
+  background: linear-gradient(90deg, #512da8 0%, #1976d2 100%);
+  box-shadow: 0 4px 24px #1976d2a0;
+}
+
+.adminsignup-form p {
+  margin-top: 1.2rem;
+  font-size: 1.11rem;
+  text-align: center;
+}
+
+.adminsignup-form p[style*="#27ae60"] {
+  color: #27ae60 !important;
+  font-weight: 700;
+}
+.adminsignup-form p[style*="#e74c3c"] {
+  color: #e74c3c !important;
+  font-weight: 700;
+}
+
+.adminsignup-form input[type="text"],
+.adminsignup-form input[type="password"],
+.adminsignup-form input[type="email"] {
+  letter-spacing: 0.5px;
+}
+
+.adminsignup-form div[style*="position: relative"] {
+  margin-bottom: 1.4rem;
+}
+
+.adminsignup-form button[aria-label] {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.18rem;
+  color: #1976d2;
+  padding: 0 0.2rem;
+}
+
+@media (max-width: 600px) {
+  .adminsignup-form {
+    padding: 1.2rem 0.7rem 1.2rem 0.7rem;
+    max-width: 98vw;
+    border-left: 4px solid #1976d2;
+  }
+  .adminsignup-form h2 {
+    font-size: 1.13rem;
+  }
+  .adminsignup-form button[type="submit"] {
+    font-size: 1rem;
+  }
+  .adminsignup-outer {
+    padding-top: 60px;
+    padding-bottom: 20px;
+  }
+} 

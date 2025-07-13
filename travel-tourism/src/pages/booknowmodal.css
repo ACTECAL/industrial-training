@@ -1,0 +1,117 @@
+.booknow-modal-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(30,41,59,0.32);
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(3.5px) saturate(1.2);
+}
+.booknow-modal {
+  background: rgba(255,255,255,0.82);
+  border-radius: 28px;
+  box-shadow: 0 12px 48px rgba(30,41,59,0.22);
+  padding: 2.7rem 2.5rem 2.2rem 2.5rem;
+  max-width: 420px;
+  width: 98vw;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  backdrop-filter: blur(8px) saturate(1.2);
+  border: 1.5px solid #e0e7ff;
+  transition: box-shadow 0.3s, background 0.3s;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+.booknow-modal-close {
+  position: absolute;
+  top: 16px;
+  right: 22px;
+  background: none;
+  border: none;
+  font-size: 2.1rem;
+  color: #1e3c72;
+  cursor: pointer;
+  font-weight: 700;
+  opacity: 0.7;
+  transition: opacity 0.2s, color 0.2s;
+  z-index: 2;
+}
+.booknow-modal-close:hover {
+  opacity: 1;
+  color: #d63b22;
+}
+.booknow-modal-title {
+  width: 100%;
+  font-size: 1.55rem;
+  color: #fff;
+  font-weight: 900;
+  margin-bottom: 1.5rem;
+  letter-spacing: 1.2px;
+  text-align: center;
+  background: linear-gradient(90deg, #1e3c72 0%, #2a5298 100%);
+  border-radius: 18px 18px 8px 8px;
+  padding: 1.1rem 0.5rem 1.1rem 0.5rem;
+  box-shadow: 0 2px 12px rgba(30,41,59,0.10);
+}
+.booknow-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+.booknow-form label {
+  font-size: 1.09rem;
+  color: #1a237e;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+.booknow-input {
+  font-size: 1.01rem;
+  padding: 0.8rem 1.1rem;
+  border-radius: 10px;
+  border: 1.5px solid #b3c6e7;
+  margin-top: 0.2rem;
+  background: #f5f7fa;
+  color: #232946;
+  transition: border 0.2s, box-shadow 0.2s;
+  box-shadow: 0 1px 6px rgba(30,41,59,0.06);
+}
+.booknow-input:focus {
+  border: 1.5px solid #2a5298;
+  outline: none;
+  box-shadow: 0 2px 12px rgba(30,41,59,0.13);
+}
+.booknow-btn {
+  background: linear-gradient(90deg, #1e3c72 0%, #2a5298 100%);
+  color: #fff;
+  font-size: 1.13rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 10px;
+  padding: 1rem 2.5rem;
+  margin-top: 0.7rem;
+  cursor: pointer;
+  box-shadow: 0 2px 12px rgba(30,41,59,0.10);
+  transition: background 0.2s, box-shadow 0.2s, transform 0.2s;
+  letter-spacing: 0.5px;
+}
+.booknow-btn:hover {
+  background: linear-gradient(90deg, #2a5298 0%, #1e3c72 100%);
+  box-shadow: 0 6px 24px rgba(30,41,59,0.16);
+  transform: translateY(-2px) scale(1.03);
+}
+@media (max-width: 600px) {
+  .booknow-modal {
+    padding: 1.2rem 0.7rem 1.2rem 0.7rem;
+    max-width: 99vw;
+  }
+  .booknow-modal-title {
+    font-size: 1.1rem;
+    padding: 0.7rem 0.2rem 0.7rem 0.2rem;
+  }
+} 

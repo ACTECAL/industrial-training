@@ -1,0 +1,33 @@
+/* Responsive Home & Destination Section Fixes */
+.home-section,
+.destination-section {
+  width: 100vw;
+  padding: 1.2rem 1rem;
+  box-sizing: border-box;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  min-height: 100vh;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.home-banner-section {
+  /* background: linear-gradient(135deg, #e0e7ff 0%, #a5b4fc 100%); */
+}
+
+@media (max-width: 600px) {
+  .home-section,
+  .destination-section {
+    padding: 0.7rem 0.3rem;
+  }
+  .destination-title {
+    font-size: 1.3rem;
+  }
+  .destination-card {
+    padding: 0.7rem;
+  }
+} 

@@ -1,0 +1,120 @@
+.dashboard-section {
+  width: 100vw;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #e0e7ff 0%, #fffaf9 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  margin-top: 70px;
+}
+.dashboard-title {
+  font-size: 2.2rem;
+  color: #1e3c72;
+  font-weight: 900;
+  margin: 2.5rem 0 1.5rem 0;
+  letter-spacing: 1.2px;
+}
+.dashboard-table-wrap {
+  width: 95vw;
+  max-width: 1100px;
+  overflow-x: auto;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 32px rgba(30,41,59,0.13);
+  padding: 2rem 1.2rem;
+  margin-bottom: 3rem;
+}
+.dashboard-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1.05rem;
+}
+.dashboard-table th, .dashboard-table td {
+  padding: 0.8rem 0.7rem;
+  text-align: left;
+  border-bottom: 1px solid #e0e7ff;
+}
+.dashboard-table th {
+  background: #e0e7ff;
+  color: #1e3c72;
+  font-weight: 700;
+}
+.confirmed {
+  color: #219a4b;
+  font-weight: 700;
+}
+.pending {
+  color: #d63b22;
+  font-weight: 700;
+}
+.confirmed-row {
+  background: #e8f5e9;
+}
+.dashboard-btn {
+  border: none;
+  border-radius: 8px;
+  padding: 0.5rem 1.2rem;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-right: 0.5rem;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+.confirm-btn {
+  background: linear-gradient(90deg, #1e3c72 0%, #2a5298 100%);
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(30,41,59,0.10);
+}
+.confirm-btn:hover {
+  background: linear-gradient(90deg, #219a4b 0%, #43e97b 100%);
+  color: #fff;
+}
+.delete-btn {
+  background: linear-gradient(90deg, #d63b22 0%, #ff6a00 100%);
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(254,78,55,0.10);
+}
+.delete-btn:hover {
+  background: linear-gradient(90deg, #b71c1c 0%, #ff6a00 100%);
+  color: #fff;
+}
+.dashboard-empty {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dashboard-back-btn {
+  background: linear-gradient(90deg, #1e3c72 0%, #2a5298 100%);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 8px;
+  padding: 0.7rem 1.7rem;
+  margin-bottom: 1.2rem;
+  margin-top: 1.2rem;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(30,41,59,0.10);
+  transition: background 0.2s, box-shadow 0.2s, transform 0.2s;
+  letter-spacing: 0.5px;
+}
+.dashboard-back-btn:hover {
+  background: linear-gradient(90deg, #2a5298 0%, #1e3c72 100%);
+  box-shadow: 0 4px 16px rgba(30,41,59,0.13);
+  transform: translateY(-2px) scale(1.03);
+}
+@media (max-width: 700px) {
+  .dashboard-table th, .dashboard-table td {
+    padding: 0.5rem 0.3rem;
+    font-size: 0.95rem;
+  }
+  .dashboard-title {
+    font-size: 1.3rem;
+    margin: 1.2rem 0 0.7rem 0;
+  }
+  .dashboard-table-wrap {
+    padding: 1rem 0.2rem;
+  }
+} 

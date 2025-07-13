@@ -1,0 +1,124 @@
+body, .login-bg {
+  min-height: 100vh;
+  background: linear-gradient(120deg, #f0f4fa 0%, #e9eefa 100%);
+}
+
+.login-outer {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.login-form {
+  max-width: 400px;
+  width: 100%;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 8px 40px rgba(0,0,0,0.13);
+  padding: 2.7rem 2.5rem 2.2rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.login-form h2 {
+  margin-bottom: 2rem;
+  color: #1a2233;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 1rem 1.1rem;
+  margin-bottom: 1.3rem;
+  border: 1.5px solid #d1d5db;
+  border-radius: 10px;
+  font-size: 1.08rem;
+  background: #f7fafd;
+  transition: border 0.2s, box-shadow 0.2s;
+  box-sizing: border-box;
+}
+
+.login-form input:focus {
+  border: 1.5px solid #007bff;
+  outline: none;
+  box-shadow: 0 2px 8px rgba(30,41,59,0.10);
+}
+
+.login-form button[type="submit"] {
+  width: 100%;
+  padding: 1rem;
+  background: linear-gradient(90deg, #007bff 0%, #0056b3 100%);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.15rem;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 0.2rem;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(30,41,59,0.07);
+}
+
+.login-form button[type="submit"]:hover {
+  background: linear-gradient(90deg, #0056b3 0%, #007bff 100%);
+}
+
+.login-form p {
+  margin-top: 1.2rem;
+  font-size: 1.08rem;
+  text-align: center;
+}
+
+.login-form p[style*="#27ae60"] {
+  color: #27ae60 !important;
+  font-weight: 600;
+}
+.login-form p[style*="#e74c3c"] {
+  color: #e74c3c !important;
+  font-weight: 600;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+  letter-spacing: 0.5px;
+}
+
+.login-form div[style*="position: relative"] {
+  margin-bottom: 1.3rem;
+}
+
+.login-form button[aria-label] {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.15rem;
+  color: #007bff;
+  padding: 0 0.2rem;
+}
+
+@media (max-width: 600px) {
+  .login-form {
+    padding: 1.2rem 0.7rem 1.2rem 0.7rem;
+    max-width: 98vw;
+  }
+  .login-form h2 {
+    font-size: 1.2rem;
+  }
+  .login-form button[type="submit"] {
+    font-size: 1rem;
+  }
+  .login-outer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+} 
