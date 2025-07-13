@@ -1,0 +1,53 @@
+/* Dashboard.css */
+.dashboard-container {
+    padding: 40px;
+    text-align: center;
+    background-color: #f5f5f5;
+    min-height: 100vh;
+  }
+  
+  .dashboard-container h2 {
+    color: #1976d2;
+    margin-bottom: 30px;
+  }
+  
+  .survey-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .survey-card {
+    background: white;
+    border: 2px solid #1976d2;
+    border-radius: 10px;
+    padding: 20px;
+    width: 260px;
+    transition: 0.3s;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  .survey-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .survey-card h3 {
+    color: #0d47a1;
+    margin-bottom: 15px;
+  }
+  
+  .btn-sm {
+    background-color: #1976d2;
+    color: white;
+    padding: 8px 12px;
+    margin: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  
+  .btn-sm:hover {
+    background-color: #0d47a1;
+  }
+  

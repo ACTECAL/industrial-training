@@ -1,0 +1,45 @@
+.about-container {
+    padding: 3rem 2rem;
+    background-color: #ffffff;
+    text-align: center;
+    border-top: 1px solid #dee2e6;
+  }
+  
+  .about-title {
+    font-size: 2.2rem;
+    color: #1976d2;
+    margin-bottom: 1rem;
+  }
+  
+  .about-text {
+    font-size: 1.1rem;
+    color: #444;
+    max-width: 800px;
+    margin: 0 auto 2rem;
+  }
+  
+  .features {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .feature-card {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 10px;
+    width: 250px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  }
+  
+  .feature-card h3 {
+    font-size: 1.3rem;
+    color: #0d47a1;
+    margin-bottom: 0.5rem;
+  }
+  
+  .feature-card p {
+    font-size: 1rem;
+    color: #555;
+  } 
