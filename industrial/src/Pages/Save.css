@@ -1,0 +1,149 @@
+body {
+
+  margin: 0;
+
+  padding: 0;
+
+  font-family: 'Arial', sans-serif;
+
+  background-color: #0f172a; /* Dark navy blue background */
+
+  color: #f1f5f9; /* Light text for contrast */
+
+}
+
+
+
+h1, h2 {
+
+  text-align: center;
+
+  color: #60a5fa; /* Soft blue for headings */
+
+}
+
+
+
+form {
+
+  max-width: 400px;
+
+  margin: 40px auto;
+
+  padding: 20px;
+
+  background: #1e293b; /* Slightly lighter than body */
+
+  border-radius: 10px;
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+
+}
+
+
+
+input {
+
+  width: 100%;
+
+  padding: 12px;
+
+  margin-bottom: 14px;
+
+  border: 1px solid #334155;
+
+  border-radius: 6px;
+
+  background-color: #0f172a;
+
+  color: #f1f5f9;
+
+}
+
+
+
+input::placeholder {
+
+  color: #94a3b8; /* Lighter placeholder text */
+
+}
+
+
+
+button {
+
+  width: 100%;
+
+  padding: 12px;
+
+  background-color: #3b82f6; /* Bright blue */
+
+  color: #fff;
+
+  border: none;
+
+  border-radius: 6px;
+
+  font-weight: bold;
+
+  transition: background-color 0.3s ease, transform 0.2s ease;
+
+  cursor: pointer;
+
+}
+
+
+
+button:hover {
+
+  background-color: #2563eb; /* Darker blue on hover */
+
+  transform: scale(1.03);
+
+}
+
+
+
+button:active {
+
+  background-color: #1d4ed8; /* Even darker blue on click */
+
+  transform: scale(0.98);
+
+}
+
+
+
+nav {
+
+  background-color: #1e293b; /* Navbar background */
+
+  padding: 12px 0;
+
+  text-align: center;
+
+}
+
+
+
+nav a {
+
+  text-decoration: none;
+
+  color: #f1f5f9;
+
+  margin: 0 15px;
+
+  font-weight: bold;
+
+}
+
+
+
+nav a:hover {
+
+  color: #60a5fa;
+
+  text-decoration: underline;
+
+}
